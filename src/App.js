@@ -1,7 +1,7 @@
 
 import Counter from "./components/counter/counter";
 import Card from "./components/card/card";
-
+import Posts from "./components/posts/posts";
 const App = () => {
     return (
         <div>
@@ -22,6 +22,7 @@ const App = () => {
                 duration = "1h 30m"
             >
             </Card>  
+            <Posts></Posts>
         </div>   
     )    
 }

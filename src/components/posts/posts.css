@@ -1,0 +1,33 @@
+.posts {
+    margin: 40px auto 0 auto;
+    width: 800px;
+    height: 650px;
+    overflow: scroll;
+    padding: 10px;
+    box-shadow: 0px 0px 50px black;
+}
+
+.posts::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+  }
+  
+.posts::-webkit-scrollbar-thumb {
+    background-color: rgba(49, 45, 45, 0.9);
+    border-radius: 5px;
+
+}
+  
+  /* Для Firefox */
+.posts::-moz-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px; 
+}
+  
+.posts::-moz-scrollbar-thumb {
+    background-color: rgb(40, 36, 36);
+    border-radius: 5px;
+}

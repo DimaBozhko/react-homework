@@ -1,9 +1,9 @@
 .counter {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     width: 200px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto 60px auto;
     padding: 20px;
     border: 2px solid rgb(2, 145, 170);
     border-radius: 10px;
