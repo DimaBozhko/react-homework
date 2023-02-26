@@ -1,7 +1,9 @@
 
-import Counter from "./components/counter/counter";
-import Card from "./components/card/card";
-import Posts from "./components/posts/posts";
+import Counter from "./components/Counter/Counter";
+import Card from "./components/Card/Card";
+import Posts from "./components/Posts/Posts";
+import ToDoList from "./components/ToDoList/ToDoList";
+
 const App = () => {
     return (
         <div>
@@ -23,6 +25,9 @@ const App = () => {
             >
             </Card>  
             <Posts></Posts>
+            <ToDoList 
+                textLable ="Введіть завдання на день"              
+            />
         </div>   
     )    
 }
