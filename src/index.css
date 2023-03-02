@@ -1,4 +1,5 @@
 body {
+  position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -15,7 +16,7 @@ code {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 50%;
   margin: 15px;
 }
 .nav-item {
@@ -27,7 +28,7 @@ nav {
   font-weight: 700;
   transition: .3s;
   padding: 15px;
-  /* border: 1px solid transparent; */
+
 }
 
 .nav-item:hover {
@@ -37,7 +38,19 @@ nav {
   box-shadow: 2px 3px 32px rgb(73, 1, 47);
   box-shadow: 2px 3px 32px rgb(30, 0, 19);
   border-radius: 10px;
-  /* border: 1px solid black; */
+}
 
-
+.main-headline {
+  width: 400px;
+  display: block;
+  margin: 200px auto;
+}
+.posts {
+  padding: 10px;
+}
+.page-about {
+  margin: 20px;
+}
+.solo-post {
+  margin: 20px;
 }
