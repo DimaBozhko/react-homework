@@ -1,4 +1,5 @@
 import {Routes, Route, NavLink} from "react-router-dom";
+import { useState, createContext } from "react";
 import Counter from "./components/Counter/Counter";
 import Card from "./components/Card/Card";
 import ToDoList from "./components/ToDoList/ToDoList";
@@ -7,8 +8,19 @@ import About from "./pages/About";
 import Posts from "./pages/Posts";
 import Post from "./pages/Post";
 import NotFound from "./pages/NotFoun";
+import Widget from "./components/Widget/Widget";
+
+export const Context = createContext();
 
 const App = () => {
+    const user = {
+        name: "alex",
+        age: "25",
+        id: 1
+    }
+    
+
+
     return (
         <div>
             <nav>
@@ -46,6 +58,10 @@ const App = () => {
                 <Route path="/ToDoList" element={<ToDoList/>}></Route>
                 <Route path="*" element={<NotFound/>}></Route>
             </Routes>
+            <Context.Provider value = {user}>
+                <Widget />
+            </Context.Provider>
+            
         </div>   
     )    
 }
