@@ -18,8 +18,6 @@ const App = () => {
         age: "25",
         id: 1
     }
-    
-
 
     return (
         <div>
@@ -61,7 +59,6 @@ const App = () => {
             <Context.Provider value = {user}>
                 <Widget />
             </Context.Provider>
-            
         </div>   
     )    
 }
